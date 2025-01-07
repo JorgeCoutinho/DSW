@@ -1,2 +1,2 @@
 # DSW
-Atividades de Desenvolvimento de Sistemas Web
+Atividades e Projetos de Desenvolvimento de Sistemas Web
