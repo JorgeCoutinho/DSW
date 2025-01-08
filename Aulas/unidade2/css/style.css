@@ -1,0 +1,38 @@
+/* 4 - External CSS */
+h3{
+    color: green;
+    font-size: 60px;
+}
+p{
+    color: blueviolet
+}
+
+/* 6 - Classes */
+.paragrafo{
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+
+/* 7 - IDs */
+#titulo-exclusivo{
+    background-color: rgba(4, 8, 247, 0.945);
+    color: aquamarine;
+    padding: 10px;
+}
+
+/*8 - Multiplas Regras, ordem do CSS*/
+h2{
+   border-bottom: 2px solid red; 
+}
+.titulo{
+    border-bottom: 2px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 2px solid green;
+}
+
+.nome-cor{
+    color: crimson;
+}
