@@ -1,0 +1,24 @@
+#Box {
+  width: 300px;
+  /* Largura do Box */
+  height: 200px;
+  /* Altura do Box */
+  border: 10px solid blue;
+  /* Borda sólida azul */
+  padding: 20px;
+  /* Espaçamento interno */
+  margin: 20px;
+  /* Espaçamento externo */
+  background-color: lightgray;
+  outline: 10px dashed green;
+  /* Outline tracejado verde */
+}
+
+
+
+.myText {
+  color: white;
+  background-color: darkblue;
+  text-align: center;
+  /* Centraliza o texto */
+}

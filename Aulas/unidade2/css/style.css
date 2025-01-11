@@ -1,38 +1,505 @@
 /* 4 - External CSS */
-h3{
+h3 {
     color: green;
     font-size: 60px;
 }
-p{
+
+p {
     color: blueviolet
 }
 
 /* 6 - Classes */
-.paragrafo{
+.paragrafo {
     background-color: black;
     color: aqua;
     padding: 5px;
 }
 
 /* 7 - IDs */
-#titulo-exclusivo{
+#titulo-exclusivo {
     background-color: rgba(4, 8, 247, 0.945);
     color: aquamarine;
     padding: 10px;
 }
 
 /*8 - Multiplas Regras, ordem do CSS*/
-h2{
-   border-bottom: 2px solid red; 
+h2 {
+    border-bottom: 2px solid red;
 }
-.titulo{
+
+.titulo {
     border-bottom: 2px solid blue;
 }
 
-#algum-titulo{
+#algum-titulo {
     border-bottom: 2px solid green;
 }
 
-.nome-cor{
+
+
+/* 9 - Nome cor */
+.nome-cor {
     color: crimson;
+}
+
+/* 10 - hexa*/
+.hex {
+    color: #ff0000;
+}
+
+/* 11 - mais hex */
+
+.hex-mais {
+    color: #00f;
+}
+
+/* 12 - rgb */
+.rgb {
+    color: rgba(0, 0, 0, 0.795);
+}
+
+.mix-rgb {
+    color: rgb(rgb(82, 32, 32), rgb(36, 36, 51), rgb(89, 255, 13));
+}
+
+/* 13 - rgba */
+.rgba {
+    color: rgba(100, 189, 5, 1);
+}
+
+/* 14 - hsl */
+.hsl {
+    color: hsl(100, 10%, 50%);
+}
+
+.hsl2 {
+    color: hsl(197, 77%, 41%);
+}
+
+/* 15 - background color */
+.bg {
+    background-color: #121212;
+    color: yellow;
+}
+
+.bg2 {
+    background-color: rgb(255, 0, 0);
+    color: #300379;
+}
+
+/* 16 - background image */
+.bg-opacity {
+    background-color: forestgreen;
+    opacity: 0.2;
+}
+
+.bg-opacity2 {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+/* 17 RGBA opacidade */
+.rgba-opacity {
+    background-color: rgba(20, 172, 9, 0.5);
+}
+
+/* 18 - bg image */
+
+.bg-image {
+    background-image: url('../../img/nature.jpeg');
+    padding: 10px;
+    color: white;
+}
+
+/* 19 - centralizar bg image */
+/* Regra para dois bg */
+
+.not-center-bg,
+.center-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url('../../img/nature.jpeg');
+}
+
+.center-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+/* 20 - largura e altura */
+.largura-altura {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+}
+
+.largura-altura-2 {
+    height: 300px;
+    background-image: url('../../img/nature.jpeg');
+    background-position: center;
+    padding: 20px;
+}
+
+
+/* 21 - padding */
+
+.sem-padding,
+.padding {
+    background-color: #121212;
+    color: white;
+}
+
+.padding {
+    padding: 20px;
+    background-color: #333;
+}
+
+
+/* 22 - shorthand padding */
+
+.shorthand-padding {
+    background-color: #cc7edd;
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2 {
+    background-color: #cc7edd;
+    padding: 10px 20px 10px 20px;
+}
+
+/* 23 - padding width */
+.border-box {
+    background-color: #444;
+    color: white;
+    width: 400px;
+    padding: 50px;
+
+}
+
+.border-box-2 {
+    background-color: #7a7777;
+    color: white;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* 24 - Border */
+.border {
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2 {
+    border: 2px solid #931;
+    padding: 25px;
+}
+
+/* 25 - Border individual */
+
+.borda-esquerda {
+    border-left: 5px solid blue;
+    background-color: #aaa1aa;
+    padding: 25px;
+}
+
+
+.borda-baixo {
+    border-bottom: 3px double rgb(48, 166, 193);
+    border-right: 3px double rgb(48, 166, 193);
+    background-color: #cacaca;
+    padding: 20px;
+}
+
+/* 26 - Border Radius */
+.border-radius {
+    border: 2px solid blue;
+    background-color: #55a399;
+    color: blue;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.border-radius-2 {
+    background-color: #cf89bf;
+    color: rgb(164, 8, 154);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+/* 27 Margens */
+
+.margin {
+    background-color: #7a7777;
+    margin: 10px;
+}
+
+.margin-top {
+    background-color: #999;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.margin-shorthand {
+    background-color: #55a399;
+    margin: 5px 20px 15px 20px;
+}
+
+/* 28 - box model */
+.box-model {
+    background-color: #7a7777;
+    padding: 15px 25px;
+    margin: 20px;
+    border: 3px solid #931;
+    width: 200px;
+    height: 400px;
+}
+
+
+/* 30 - Alinhamento de texto */
+.text-direito {
+    text-align: right;
+}
+
+.texto-center {
+    text-align: center;
+    /* width: 300px; */
+    border: 1px solid black;
+}
+
+/* 31 - Texto decoração */
+
+.underline {
+    text-decoration: underline;
+}
+
+.risco {
+    text-decoration: line-through;
+}
+
+.sem-underline {
+    text-decoration: none;
+    color: red;
+}
+
+/* 32 - Texto transform */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* 33 - espaço entre letras */
+
+.espaco {
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/* 34 - 34 - font */
+.serif {
+    font-family: Georgia, 'Times New Roman';
+}
+
+.sans-serif {
+    font-family: 'helvetica';
+}
+
+.monospace {
+    font-family: 'Courier New';
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* 35 - font-estilo */
+.italico {
+    font-style: italic;
+}
+
+.oblico {
+    font-style: oblique;
+}
+
+/* 36 - font-weight */
+.fino,
+.bold,
+.bolder {
+    font-family: 'helvetica';
+}
+
+.fino {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+
+/*37 - font-size */
+.small {
+    font-size: 12px;
+}
+
+.big {
+    font-size: 35px;
+}
+
+/* 38 - display */
+
+.inline-box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+}
+
+.block {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+}
+
+/* 39 - visibility */
+.invisivel {
+    display: none;
+}
+
+/* 40 - static */
+
+.static {
+    position: static;
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+/* 41 - relative */
+
+.relative {
+    position: relative;
+    background-color: rgba(4, 8, 247, 0.945);
+    width: 100px;
+    height: 100px;
+    top: left;
+    left: 40px;
+}
+
+/* 42 - absolute */
+.absolute {
+    position: absolute;
+    background-color: rgba(152, 170, 152);
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* 43 - relative com absulute */
+
+.relative-container {
+    position: relative;
+    
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-item,
+.absolute-item-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #931;
+    position: absolute;
+}
+
+.absolute-item {
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-item-2 {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* 44 - fixed */
+.fixed {
+    position: fixed;
+    background-color: #851;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    right: 30px;
+    border: 1px solid blue;
+}
+
+/* 45 - stick */
+.sticky {
+    top: 2px;
+    right: 1px;
+    position: sticky;
+    top: 0;
+    background-color: #851;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+
+}
+
+/* 46 - z-index */
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #931;
+    position: absolute;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: green;
+}
+
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    background-color: red;
+}
+
+.absolute-5 {
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+    background-color: blue;
 }

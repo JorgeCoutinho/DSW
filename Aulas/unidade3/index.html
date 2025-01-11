@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/Aulas/unidade3/css/style.css">
+</head>
+
+<body>
+    <!-- formulário -->
+    <form action="register.php" method="get"> <!-- 2 - atributo form -->
+        <h2>Formulário HTML</h2>
+        <div>
+            <label for="">Nome:</label>
+            <input type="text">
+        </div>
+
+        <!-- 3 - Atributo name -->
+        <div>
+            <label for="age/idade">Idade: </label> <!-- 4 - Atributo label  -->
+            <input type="text" name="age/idade">
+        </div>
+
+
+
+        <!-- 6 - select -->
+        <div>
+            <label for="job">Selecione a sua profissão</label>
+            <select name="job">
+                <option value="professor">Professor</option>
+                <option value="programador">programador</option>
+                <option value="dev">dev/Mobile</option>
+                <option value="tester">Teste QA</option>
+            </select>
+        </div>
+
+        <!-- 7 - atributo -->
+        <div>
+            <label for="contract">Você leu o controta?:</label>
+            <select name="job">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </div>
+
+        <!-- 8 - Mútilplas opções -->
+        <div>
+            <label for="items">Selecione os items desejados:</label>
+            <select name="items" multiple>
+                <option value="pera">Pera</option>
+                <option value="feijao">Feijão</option>
+                <option value="fralda">Fralda</option>
+                <option value="cervaja">Cerveja</option>
+                <option value="dinheiro">Dinheiro</option>
+            </select>
+        </div>
+
+        <!-- 9 - Textarea -->
+        <div>
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- 10 - fieldsey e legend -->
+
+        <div>
+            <fieldset>
+                <legend› preencha suas informações: </legend>
+                    <label for="firstname" ›nome: </label>
+                        <input type-"text" name: "firstname" › <label for="lastname "> Sobrenome</label>
+                    <input type-"text" name: "Lastname">
+            </fieldset>
+        </div>
+
+        <!-- 11 - detalist -->
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavors">
+            <datalist id="flavors">
+                <option value="Morango"></option>
+                <option value="Chocolate"></option>
+                <option value="Baunilha"></option>
+                <option value="Creme"></option>
+        </div>
+
+        <!-- 12 - senha -->
+        <div>
+            <label for="password">Digite sua senha</label>
+            <input type="password" name="password">
+        </div>
+
+        <!-- 14 - radio button -->
+        <div>
+            <label for="car_model">Escolha o modelo so seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">bmw</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="ferrari">ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="ferrari">Renault</label>
+            </div>
+
+        </div>
+
+        <!-- 15 - input checkbox -->
+
+        <label for="car_model">Escolha o modelo so seu carro:</label>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="bmw">bmw</label>
+        </div>
+
+
+        <!-- 13 - resetar form -->
+        <input type="reset" value="liimpa">
+
+        <!-- 5 - envio do form -->
+        <input type="submit" value="Enviar">
+
+
+
+    </form>
+</body>
+
+</html>
